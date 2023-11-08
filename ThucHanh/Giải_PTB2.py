@@ -9,7 +9,7 @@ class QuadraticEquationSolverApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Giải PTB2: Ax^2 + Bx + C = 0")
-        self.root.geometry("350x150")  # Đặt kích thước cửa sổ
+        self.root.geometry("350x150")
 
         self.equation_frame = Frame(root)
         self.equation_frame.pack(pady=20)
@@ -17,19 +17,19 @@ class QuadraticEquationSolverApp:
         self.a_label = Label(self.equation_frame, text="A:")
         self.a_label.pack(side=tk.LEFT, padx=10)
 
-        self.a_entry = Entry(self.equation_frame, width=10)  # Đặt chiều rộng của Entry
+        self.a_entry = Entry(self.equation_frame, width=10)
         self.a_entry.pack(side=tk.LEFT)
 
         self.b_label = Label(self.equation_frame, text="B:")
         self.b_label.pack(side=tk.LEFT, padx=10)
 
-        self.b_entry = Entry(self.equation_frame, width=10)  # Đặt chiều rộng của Entry
+        self.b_entry = Entry(self.equation_frame, width=10)
         self.b_entry.pack(side=tk.LEFT)
 
         self.c_label = Label(self.equation_frame, text="C:")
         self.c_label.pack(side=tk.LEFT, padx=10)
 
-        self.c_entry = Entry(self.equation_frame, width=10)  # Đặt chiều rộng của Entry
+        self.c_entry = Entry(self.equation_frame, width=10)
         self.c_entry.pack(side=tk.LEFT)
 
         self.solve_button = Button(root, text="Giải và Vẽ", command=self.solve_and_plot)
