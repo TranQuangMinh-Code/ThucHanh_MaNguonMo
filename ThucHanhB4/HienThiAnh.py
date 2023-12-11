@@ -10,13 +10,14 @@ def open_image():
     if file_path:
         # Hiển thị ảnh đã mở
         img = Image.open(file_path)
-        img.thumbnail((400, 400))  # Để hiển thị ảnh nhỏ hơn
+        img.thumbnail((300, 300))  # Để hiển thị ảnh nhỏ hơn
         img = ImageTk.PhotoImage(img)
         image_label.config(image=img)
         image_label.image = img
 
 # Tạo cửa sổ Tkinter
 root = tk.Tk()
+root.geometry("500x400")
 root.title("Hiển thị ảnh")
 
 # Nút để mở ảnh từ máy tính
